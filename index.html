@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce CRUD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>E-Commerce</h2>
+
+  <form id="productForm">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" required>
+
+    <label for="category">Category:</label>
+    <select id="category" required>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+    </select>
+
+    <label for="sellingPrice">Selling Price:</label>
+    <input type="number" id="sellingPrice" required>
+
+    <button type="button" onclick="addProduct()">Add Product</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Selling Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="productList">
+      <!-- Product list will be displayed here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
